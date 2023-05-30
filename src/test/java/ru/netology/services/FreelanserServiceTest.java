@@ -14,11 +14,11 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FreelanserServiceTest {
 
     @ParameterizedTest
-   // @CsvSource({
-     //       "3,10000,3000,20000",
-       //     "2,100000,60000,150000"
-   // })
-    @CsvFileSource(files="src/test/resources/Freelancer.csv")
+    // @CsvSource({
+    //       "3,10000,3000,20000",
+    //     "2,100000,60000,150000"
+    // })
+    @CsvFileSource(files = "src/test/resources/Freelancer.csv")
     public void calculateMounthRest1(int expected, int income, int expenses, int threshold) {
         FreelanserService service = new FreelanserService();
 
